@@ -3,8 +3,9 @@ import { Component, ElementRef, Renderer2 } from '@angular/core';
 @Component({
   selector: 'app-unregister-event-listeners',
   // templateUrl: './unregister-event-listeners.component.html',
-  styleUrls: ['./unregister-event-listerners.component.scss'],
+  styleUrls: ['./unregister-event-listeners.component.scss'],
   template: `
+    <h2>Unregister Event Listeners</h2>
     <div>Events Triggered {{triggerCount}}</div>
     <button type="button" (myClick)="$event">Trigger Click Event</button>
   `

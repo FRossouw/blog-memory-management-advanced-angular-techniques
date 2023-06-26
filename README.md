@@ -23,4 +23,4 @@ By implementing these advanced techniques, any Angular application can are runni
 4. Navigate to `http://localhost:4200/` to see the application running.
 
 ## Screenshot of Advanced Techniques for Memory Management in Angular Applications
-[](src/assets/screenshot.PNG)
+()[src/assets/screenshot.PNG]

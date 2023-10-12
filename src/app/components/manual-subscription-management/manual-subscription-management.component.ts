@@ -15,20 +15,20 @@ import { DataService } from 'src/app/services/data.service';
   `
 })
 export class ManualSubscriptionManagementComponent implements OnDestroy   {
-  private subscriptions: Subscription[] = [];
+  private subscription: Subscription;
   data: iData[];
 
   constructor(private dataService: DataService) {
-    this.subscriptions.push(
+    this.subscription.add(
       this.dataService.getData()
-        .subscribe((data) => {
+        .subscribe((data: iData[]) => {
           this.data = data;
         })
     );
   }
 
   ngOnDestroy(): void {
-    this.subscriptions.forEach((subscription: Subscription) =>
-      subscription.unsubscribe());
+    this.subscription.unsubscribe();
   }
+
 }
